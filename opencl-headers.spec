@@ -1,8 +1,8 @@
 %global cl_headers_commit e55138572c81dce15ffe402bd1142d9652ec5cb5
 %global date 20260317
-%global cl_headers_shortcommit %(c=%{cl_headers_commit}; echo ${c:0:7})
+%global cl_headers_shortcommit %(c=%{cl_headers_commit}; echo $c | cut -c1-7)
 %global cl_hpp_commit 40b6833d8c08de691c00e49bfca7081b06f53dd4
-%global cl_hpp_shortcommit %(c=%{cl_hpp_commit}; echo ${c:0:7})
+%global cl_hpp_shortcommit %(c=%{cl_hpp_commit}; echo $c | cut -c1-7)
 
 Name:           opencl-headers
 Version:        3.0
